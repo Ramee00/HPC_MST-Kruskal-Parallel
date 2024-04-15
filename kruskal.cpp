@@ -111,11 +111,6 @@ void mergeSortSeq(edge *edgeList, int start, int end) {
     globalTime += duration_cast<dsec>(Clock::now() - compute_start).count();
 }
 
-// For parallelizing mergeSort using tasks, we adapted structure of
-// code from slide 7 of this Oregon State University lecture
-// https://web.engr.oregonstate.edu/~mjb/cs575/Handouts/tasks.1pp.pdf
-// (Namely just using tasks to do 2 things at once and single to ensure
-// only 1 thread enqueues the tasks.)
 void mergeSort(edge *edgeList, int start, int end) {
     using namespace std::chrono;
     typedef std::chrono::high_resolution_clock Clock;
