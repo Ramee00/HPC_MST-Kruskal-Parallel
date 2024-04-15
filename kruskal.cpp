@@ -1,5 +1,4 @@
-// g++ -fopenmp -o kruskal kruskal.cpp -std=c++11
-// ./kruskalc -f exGraph1.txt
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
